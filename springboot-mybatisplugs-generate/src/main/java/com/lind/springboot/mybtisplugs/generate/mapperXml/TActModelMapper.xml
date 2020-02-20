@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lind.springboot.mybtisplugs.generate.mapper.TActModelMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.lind.springboot.mybtisplugs.generate.entity.TActModel">
+		<id column="id" property="id" />
+		<result column="create_by" property="createBy" />
+		<result column="create_time" property="createTime" />
+		<result column="del_flag" property="delFlag" />
+		<result column="update_by" property="updateBy" />
+		<result column="update_time" property="updateTime" />
+		<result column="description" property="description" />
+		<result column="model_key" property="modelKey" />
+		<result column="name" property="name" />
+		<result column="version" property="version" />
+		<result column="create_department_id" property="createDepartmentId" />
+		<result column="tenant_id" property="tenantId" />
+		<result column="create_department_ids" property="createDepartmentIds" />
+		<result column="update_department_id" property="updateDepartmentId" />
+		<result column="update_department_ids" property="updateDepartmentIds" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_by AS createBy, create_time AS createTime, del_flag AS delFlag, update_by AS updateBy, update_time AS updateTime, description, model_key AS modelKey, name, version, create_department_id AS createDepartmentId, tenant_id AS tenantId, create_department_ids AS createDepartmentIds, update_department_id AS updateDepartmentId, update_department_ids AS updateDepartmentIds
+    </sql>
+
+</mapper>

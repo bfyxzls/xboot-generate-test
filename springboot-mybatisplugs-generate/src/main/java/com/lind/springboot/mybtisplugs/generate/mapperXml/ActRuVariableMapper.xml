@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lind.springboot.mybtisplugs.generate.mapper.ActRuVariableMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.lind.springboot.mybtisplugs.generate.entity.ActRuVariable">
+		<id column="ID_" property="id" />
+		<result column="REV_" property="rev" />
+		<result column="TYPE_" property="type" />
+		<result column="NAME_" property="name" />
+		<result column="EXECUTION_ID_" property="executionId" />
+		<result column="PROC_INST_ID_" property="procInstId" />
+		<result column="TASK_ID_" property="taskId" />
+		<result column="BYTEARRAY_ID_" property="bytearrayId" />
+		<result column="DOUBLE_" property="double" />
+		<result column="LONG_" property="long" />
+		<result column="TEXT_" property="text" />
+		<result column="TEXT2_" property="text2" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID_ AS id, REV_ AS rev, TYPE_ AS type, NAME_ AS name, EXECUTION_ID_ AS executionId, PROC_INST_ID_ AS procInstId, TASK_ID_ AS taskId, BYTEARRAY_ID_ AS bytearrayId, DOUBLE_ AS double, LONG_ AS long, TEXT_ AS text, TEXT2_ AS text2
+    </sql>
+
+</mapper>

@@ -47,6 +47,7 @@
             <artifactId>mybatis-generator-core</artifactId>
             <version>${mybatis.generator.version}</version>
         </dependency>
+
     </dependencies>
     <build>
         <plugins>

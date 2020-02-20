@@ -93,7 +93,6 @@ public class XbootMPGenerator {
      */
     public static void main(String[] args) throws IOException {
         // 模板路径
-        deleteCode(className);
         String root = System.getProperty("user.dir") + "/xboot-generate/src/main/java/com/lind/xbootdemo/xbootgenerate/template";
         FileResourceLoader resourceLoader = new FileResourceLoader(root, "utf-8");
         Configuration cfg = Configuration.defaultConfiguration();

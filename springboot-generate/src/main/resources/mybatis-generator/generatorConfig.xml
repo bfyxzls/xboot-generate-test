@@ -47,17 +47,17 @@
 
         <!-- 生成实体类地址 -->
         <javaModelGenerator targetPackage="${package}.model" targetProject="${sourcePath}\\java">
-        <property name="enableSubPackages" value="false"/>
-        <property name="trimStrings" value="true"/>
-    </javaModelGenerator>
-        <!-- 生成mapxml文件 -->
-        <sqlMapGenerator targetPackage="mapper" targetProject="${sourcePath}\\resources">
             <property name="enableSubPackages" value="false"/>
-        </sqlMapGenerator>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!-- 生成mapxml文件 -->
+        <!--        <sqlMapGenerator targetPackage="mapper" targetProject="${sourcePath}\\resources">-->
+        <!--            <property name="enableSubPackages" value="false"/>-->
+        <!--        </sqlMapGenerator>-->
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator targetPackage="${package}.dao" targetProject="${sourcePath}\\java" type="XMLMAPPER">
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+        <!--        <javaClientGenerator targetPackage="${package}.dao" targetProject="${sourcePath}\\java" type="XMLMAPPER">-->
+        <!--            <property name="enableSubPackages" value="true"/>-->
+        <!--        </javaClientGenerator>-->
         <!-- table可以有多个,每个数据库中的表都可以写一个table，tableName表示要匹配的数据库表,也可以在tableName属性中通过使用%通配符来匹配所有数据库表,只有匹配的表才会自动生成文件 -->
         <!--如果想生成一个表则tableName="table_name"-->
         <table tableName="%"
