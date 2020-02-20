@@ -13,10 +13,27 @@
     <artifactId>xboot-demo</artifactId>
 
     <dependencies>
+        <!-- Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.lind</groupId>
             <artifactId>xboot-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- Mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>5.1.46</version>
+        </dependency>
+
     </dependencies>
+
+
 </project>
