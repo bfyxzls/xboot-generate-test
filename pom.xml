@@ -42,6 +42,7 @@
     </properties>
 
     <dependencyManagement>
+        <!-- dependencyManagement里声明的jar，在子项目里不需要显示声明它的版本，它默认使用dependencyManagement里的版本-->
         <dependencies>
             <!-- Spring Boot -->
             <dependency>
@@ -134,6 +135,7 @@
                 <version>${qiniu.version}</version>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
 
 </project>

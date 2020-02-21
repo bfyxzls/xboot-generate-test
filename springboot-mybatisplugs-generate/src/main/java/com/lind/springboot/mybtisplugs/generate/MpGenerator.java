@@ -63,20 +63,23 @@ public class MpGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://192.168.4.26:3306/zhfw_law_team_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false");
         mpg.setDataSource(dsc);
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
-        strategy.setTablePrefix(new String[]{"tb_", "tsys_"});// 此处可以修改为您的表前缀
+        // strategy.setTablePrefix(new String[]{"ACT_", "tsys_"});// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
         // strategy.setInclude(new String[] { "user" }); // 需要生成的表
         // strategy.setExclude(new String[]{"test"}); // 排除生成的表
         // 自定义实体父类
-        // strategy.setSuperEntityClass("com.baomidou.demo.TestEntity");
+        strategy.setSuperEntityClass("com.lind.springboot.mybtisplugs.generate.SmartLawBaseEntity");
         // 自定义实体，公共字段
-        // strategy.setSuperEntityColumns(new String[] { "test_id", "age" });
+        strategy.setSuperEntityColumns(new String[]{
+                "id", "create_by", "create_time", "update_by", "update_time", "del_flag",
+                "create_department_id", "create_department_ids", "update_department_id",
+                "update_department_ids", "tenant_id"});
         // 自定义 mapper 父类
         // strategy.setSuperMapperClass("com.baomidou.demo.TestMapper");
         // 自定义 service 父类

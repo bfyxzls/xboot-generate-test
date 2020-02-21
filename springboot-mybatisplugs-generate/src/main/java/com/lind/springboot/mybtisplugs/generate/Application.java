@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) throws Exception {
-        MpGenerator.main("D:\\github\\xbootdemo-learn\\springboot-mybatisplugs-generate\\src\\main\\java","com.lind.springboot.mybtisplugs.generate");
+        MpGenerator.main("D:\\MybatisGenerateDir","lawteam");
         SpringApplication.run(Application.class, args);
     }
 }
