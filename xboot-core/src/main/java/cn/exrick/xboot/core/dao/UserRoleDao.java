@@ -23,4 +23,6 @@ public interface UserRoleDao extends XbootBaseDao<UserRole, String> {
      * @param userId
      */
     void deleteByUserId(String userId);
+
+    List<UserRole> findByUserId(String userId);
 }

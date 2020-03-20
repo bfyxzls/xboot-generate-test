@@ -13,7 +13,6 @@
         <module>xboot-generate</module>
         <module>xboot-core</module>
         <module>xboot-demo</module>
-        <module>springboot-generate</module>
         <module>springboot-mybatisplugs-generate</module>
     </modules>
 

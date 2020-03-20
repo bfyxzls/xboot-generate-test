@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-@MapperScan("cn.exrick.xboot.your.mapper")
+@MapperScan({"cn.exrick.xboot.your.mapper","cn.exrick.xboot.core.dao","cn.exrick.xboot.core.dao.mapper"})
 public class XBootDemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(XBootDemoApplication.class, args);

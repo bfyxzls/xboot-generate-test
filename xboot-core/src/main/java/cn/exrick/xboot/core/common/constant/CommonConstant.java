@@ -112,6 +112,8 @@ public interface CommonConstant {
      */
     Integer LEVEL_THREE = 3;
 
+    Integer LEVEL_FOURE=4;
+
     /**
      * 部门负责人类型 主负责人
      */

@@ -99,7 +99,6 @@ public class MpGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent(packageName);
-        //pc.setModuleName(moduleName);
         pc.setController("controler");
         pc.setEntity("entity");
         pc.setMapper("mapper");
